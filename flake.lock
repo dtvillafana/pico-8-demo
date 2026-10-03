@@ -1,0 +1,44 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1790822859,
+        "narHash": "sha256-69xHQhAeMAD2wDXO7T2pcOZIF9Sga2W+JkmY2a11Ops=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "c59305bab2065cfecc4944690d9eedbb56f3a9fa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "pico8-ls": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1789424676,
+        "narHash": "sha256-qCI00Ivp3mS9M0mk4MMTlj77UHsihBTa0+TTqO8OaLA=",
+        "owner": "japhib",
+        "repo": "pico8-ls",
+        "rev": "723a2f0c67b2ebb34fe64fcf1d80ea294b326375",
+        "type": "github"
+      },
+      "original": {
+        "owner": "japhib",
+        "repo": "pico8-ls",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "pico8-ls": "pico8-ls"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

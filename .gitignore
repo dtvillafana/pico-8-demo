@@ -7,3 +7,16 @@ result-*
 
 # Ignore NixOS interactive test driver history
 **/.nixos-test-history
+
+# Licensed PICO-8 distribution (install locally; do not redistribute)
+/pico8
+/pico8_dyn
+/pico8.dat
+/lexaloffle-pico8.png
+/license.txt
+/pico-8_manual.txt
+/readme_linux.txt
+
+# Exported games and editor backups
+/exports/
+/carts/backup/
