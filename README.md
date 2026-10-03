@@ -40,12 +40,6 @@ Heavy hits break two connected pieces, with a 30% chance of breaking three
 Failed sieges can be retried with starting gold and ammunition restored.
 Aim freely through all 360 degrees. Angle controls step by one degree and
 repeat every 0.05 seconds when held, without an initial repeat delay.
-Hitting your own trebuchet destroys it and ends the siege after a two-second
-explosion.
-
-Self-hit explosions produce 100 full-screen color changes over two seconds,
-cycling through PICO-8's 32 palette colors. The pause menu's **rapid flash**
-option can disable the flashing and show colored debris instead.
 
 | Controls | Siege | Workshop |
 | --- | --- | --- |
@@ -136,7 +130,7 @@ replaced in the **existing Lua VM**; the cartridge does not restart and
 Try changing colors in `game.draw` to see it happen.
 
 This uses a small native bridge plus `carts/dev_reload.lua` for polling,
-compilation, and swapping. **No debugger or frame breakpoints are involved.**
+compilation, and swapping. 
 The bridge hooks API registration in process memory; the executable on disk
 is unchanged. Hot-reload mode also disables the 8192-token execution limit;
 character, memory, and cartridge-format limits remain. Ordinary launches are
@@ -166,6 +160,4 @@ ruff format --check tools
 clang-format --dry-run --Werror native/bridge.c
 ```
 
-When adding this scaffold to Git, include `flake.nix`, `flake.lock`, `carts/`,
-`native/`, `tools/`, and `docs/` so Git-backed flake commands can see the new files.
 Never commit the licensed PICO-8 distribution.
